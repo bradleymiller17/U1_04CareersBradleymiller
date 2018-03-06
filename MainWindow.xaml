@@ -1,0 +1,69 @@
+﻿<Window x:Class="U1_04_CareersBradley.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:U1_04_CareersBradley"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel Margin="0,0,2,0">
+        <Grid Background="White"   Margin="1,0,0,0" Height="10">
+
+            <Image Source="https://mma.prnewswire.com/media/522451/University_of_Guelph_Humber_Hosts_Spring_Convocation.jpg" Margin="168,10,188,-145"
+                   x:Name="guelphhumberlogo"/>
+        </Grid>
+        <Grid Background="White" Margin="1,200,61,0" Height="45">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75*"/>
+                <ColumnDefinition Width="76*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Button Content="Basic Information"
+                    x:Name="btnbasic"
+                    Click="btnBasic_Click" Margin="117.512,66,-64,-66" Grid.Column="1"/>
+
+
+
+            <Button Content="Prerequisites"
+                    x:Name="btnpre"
+                    Click="btnpre_Click" Margin="0,66,52.488,-65"/>
+
+
+            <Button Content="First year"
+                    x:Name="btnfirst"
+                    Click="btnfirst_Click" Margin="173,66,108,-65" Grid.ColumnSpan="2"/>
+
+            <Button Content="Possible Jobs"
+                    x:Name="btnJobs"
+                    Click="btnJobs_Click" Margin="149.512,-211,-62,211" Grid.Column="1"/>
+
+            <Button Content="Restart"
+                    x:Name="btnres"
+                    Click="btnres_Click" Margin="0,-210,72,215"/>
+
+
+
+
+            <TextBlock x:Name="txtBasicInfo"
+                       Visibility="Hidden"
+                       Margin="10,-73,10,53" Grid.ColumnSpan="2" ><Run Text="University of GuelphHumber  "/><LineBreak/><Run Text=" Program- Computer science Code -GCT  "/><LineBreak/><Run Text="Students attending the school 27,000 ,19,000 North Campus  7,800 "/><LineBreak/><Run Text="Lakeshore Campus  200 Orangeville Campus   2,000 apprentices "/><LineBreak/><Run Text=" 3,000 international students from 100 countries  "/></TextBlock>
+
+            <TextBlock x:Name="txtPre" Margin="6,-13,-66,-90" Grid.ColumnSpan="2"
+                       Visibility="Hidden"
+                    ><Run Text="You need English Calculus and Vectors plus four additional courses. "/><LineBreak/><Run Text="And the additional cut off ranges is 80%-84%"/></TextBlock>
+
+            <TextBlock x:Name="txtfirst"
+                       Visibility="Hidden"
+                       Margin="1,-89,33,17" Grid.ColumnSpan="2"><Run Text="Semester one Introduction to Programming "/><LineBreak/><Run Text="Calculus 1  "/><LineBreak/><Run Text="3 electives which may include courses in your Area of application  "/><LineBreak/><Run Text="Semester two  Discrete Structures in computing 1 Intermediate programming "/><LineBreak/><Run Text="3 electives which may include courses in your area of Application  "/></TextBlock>
+
+
+            <TextBlock x:Name="txtjobs"
+                       Visibility="Hidden"
+                       Margin="3,-92,41,38" Grid.ColumnSpan="2"><Run Text="Software developer "/><LineBreak/><Run Text="Game programmer"/><LineBreak/><Run Text=" Mobile application developer Web infrastructure developer "/><LineBreak/><Run Text="User experience designer "/><LineBreak/><Run Text="Systems architect "/></TextBlock>
+        </Grid>
+
+    </StackPanel>
+
+
+
+</Window>
